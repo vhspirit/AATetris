@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: blue; /* Blue background */
+    margin: 0;
+    font-family: 'Press Start 2P', cursive; /* Pixel font */
+    color: #ffffff; /* White text */
+    image-rendering: pixelated; /* Keep pixel art sharp */
+}
+
+.game-container {
+    display: flex;
+    border: 5px solid #ffffff; /* White border */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Glow effect */
+    background-color: #000000; /* Black background for the game area */
+}
+
+#tetris-canvas {
+    display: block;
+    background-color: #0d0d0d; /* Slightly lighter dark grid background */
+}
+
+.score-panel {
+    width: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #2a2a2a; /* Dark grey background for panel */
+    border-left: 5px solid #ffffff; /* White separator */
+}
+
+.score-panel h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #ffff00; /* Yellow title */
+    text-shadow: 0 0 5px #ffff00; /* Yellow glow */
+}
+
+#score {
+    font-size: 2em;
+    color: #00ff00; /* Green score */
+    text-shadow: 0 0 5px #00ff00; /* Green glow */
+    margin-top: 10px;
+}
+
+/* Add font import - will need to tell user to add this */
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
